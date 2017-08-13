@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="研发团队管理总结通过对移网运营项目实施过程复盘，达到以下目的：
+
+为了解决问题而复盘,避免重复犯错
+和团队成员一起寻找更高效达成目标的方法
+引导团队成员去思考自身能做些什么以及怎么做
+知道团队成员强弱项，合理分工
+
+复盘回顾目标业务目标
+建立自助服务平台，提升客户体验
+通过工单流程驱动，实现订单端到端调度（一点接单，全网调度）
+通过监控考核，促进高效运营
+
+研发目标打造精品，团队培养，积累经验
+评">
+<meta property="og:type" content="article">
+<meta property="og:title" content="研发团队管理总结">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/研发团队管理总结/index.html">
+<meta property="og:site_name" content="带枪出巡">
+<meta property="og:description" content="研发团队管理总结通过对移网运营项目实施过程复盘，达到以下目的：
+
+为了解决问题而复盘,避免重复犯错
+和团队成员一起寻找更高效达成目标的方法
+引导团队成员去思考自身能做些什么以及怎么做
+知道团队成员强弱项，合理分工
+
+复盘回顾目标业务目标
+建立自助服务平台，提升客户体验
+通过工单流程驱动，实现订单端到端调度（一点接单，全网调度）
+通过监控考核，促进高效运营
+
+研发目标打造精品，团队培养，积累经验
+评">
+<meta property="og:image" content="http://yoursite.com/media/15016605297261/15022618870753.jpg">
+<meta property="og:image" content="http://yoursite.com/media/14993963795713/15016601979440.jpg">
+<meta property="og:updated_time" content="2017-08-13T10:04:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="研发团队管理总结">
+<meta name="twitter:description" content="研发团队管理总结通过对移网运营项目实施过程复盘，达到以下目的：
+
+为了解决问题而复盘,避免重复犯错
+和团队成员一起寻找更高效达成目标的方法
+引导团队成员去思考自身能做些什么以及怎么做
+知道团队成员强弱项，合理分工
+
+复盘回顾目标业务目标
+建立自助服务平台，提升客户体验
+通过工单流程驱动，实现订单端到端调度（一点接单，全网调度）
+通过监控考核，促进高效运营
+
+研发目标打造精品，团队培养，积累经验
+评">
+<meta name="twitter:image" content="http://yoursite.com/media/15016605297261/15022618870753.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/08/研发团队管理总结/"/>
+
+
+
+
+
+  <title>研发团队管理总结 | 带枪出巡</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">带枪出巡</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">中年危机</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/08/研发团队管理总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xlei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="带枪出巡">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">研发团队管理总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T15:51:03+08:00">
+                2017-08-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/08/研发团队管理总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/08/08/研发团队管理总结/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="研发团队管理总结"><a href="#研发团队管理总结" class="headerlink" title="研发团队管理总结"></a>研发团队管理总结</h1><p>通过对移网运营项目实施过程复盘，达到以下目的：</p>
+<ul>
+<li>为了解决问题而复盘,避免重复犯错</li>
+<li>和团队成员一起寻找更高效达成目标的方法</li>
+<li>引导团队成员去思考自身能做些什么以及怎么做</li>
+<li>知道团队成员强弱项，合理分工</li>
+</ul>
+<h1 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a>复盘</h1><h2 id="回顾目标"><a href="#回顾目标" class="headerlink" title="回顾目标"></a>回顾目标</h2><h3 id="业务目标"><a href="#业务目标" class="headerlink" title="业务目标"></a>业务目标</h3><ul>
+<li><del>建立自助服务平台，提升客户体验</del></li>
+<li>通过工单流程驱动，实现订单端到端调度（一点接单，全网调度）</li>
+<li>通过监控考核，促进高效运营</li>
+</ul>
+<h3 id="研发目标"><a href="#研发目标" class="headerlink" title="研发目标"></a>研发目标</h3><p>打造精品，团队培养，积累经验</p>
+<h2 id="评估结果"><a href="#评估结果" class="headerlink" title="评估结果"></a>评估结果</h2><h3 id="亮点"><a href="#亮点" class="headerlink" title="亮点"></a>亮点</h3><ul>
+<li>产品化复制，成功迁移综合订单并实现Oracle转Mysql</li>
+<li>框架升级，引入前后端分离的开发方式，提升了高内聚低耦合的设计</li>
+<li>系统水平拆分，运营与工单调度拆分为两个服务；并分别部署、减少压力</li>
+<li>完善研发周例会，促进目标理解一致性，培养成员个人职业发展</li>
+</ul>
+<h3 id="不足之处"><a href="#不足之处" class="headerlink" title="不足之处"></a>不足之处</h3><ul>
+<li>交付效率低</li>
+<li>开发过程复杂</li>
+<li>复用产品风险大</li>
+</ul>
+<h2 id="分析原因"><a href="#分析原因" class="headerlink" title="分析原因"></a>分析原因</h2><ol>
+<li><p>研发流程管理执行不到位<br> （1）评审参与角色不够、不够深入；导致目标理解的偏差。<br> （2）需求模糊、不确定因素较多；未区分需求类型<br> （3）代码审查自动化后，缺乏执行流程推动<br> （4）人员变动风险未提前考虑</p>
+</li>
+<li><p>团队的开发效率不够理想<br> （1）用瀑布式开发方式进行版本迭代，开发任务路径较长<br> （2）开发前没有认真推敲打磨每个功能点，导致解释成本过高，被迫事后大量解释<br> （3）排查问题难、性能基础偏弱、可扩展性差、历史包袱沉重，系统耦合严重<br> （4）团队新人居多，开发经验较少，随着迭代版本规模和时间的推移，执行力、效率大幅度下降</p>
+</li>
+<li><p>对项目的质量及细节（如bug较多、稳定性、速度、体验等）的把控不足<br> （1）设计考虑不全面，规范要求贯彻不到位<br> （2）已有成果复用难度及风险过大，如订单调度模块，存在处处风险<br> （3）缺少问题解决经验、积累<br> （4）需求变更后，需要了解整个系统才可以正确修改，容易导致不相关模块出现bug<br> （5）技术的深度不够、架构不合理、基础能力支持弱</p>
+</li>
+</ol>
+<a id="more"></a>
+<h2 id="总结经验"><a href="#总结经验" class="headerlink" title="总结经验"></a>总结经验</h2><ol>
+<li><p>未有服务化产品，新项目开发成本高</p>
+<blockquote>
+<p>该项目重要功能工单调度，我们在其他项目有丰富的积累，但在复用起来却困难重重；<br>目前还是按照先规划、再建设、再上线，开发周期长；<br>对行业的理解、积累大部分还是体现在规划上；而并未把这些业务理解与技术创新相结合，转化成快速、敏捷的产品服务支撑。</p>
+</blockquote>
+</li>
+<li><p>技术积累跟不上PPT规划</p>
+<blockquote>
+<p>系统基础技术的债务：长时间的快速迭代过程中对于基础技术的投入过少，导致业务系统所依赖的基础架构不稳定。<br>人员的债务：长期的快速开发导致我们拥有了很好的业务系统开发人员，但是对于像基础框架、运维、安全等基础层面的研发人员准备不足。<br>快速开发的债务：在之前的快速开发中，我们舍弃了很多应当被考虑的技术细节，这些细节在过去客户体系不规范时没有显现。然而随着互联网架构冲击，这些缺失的技术细节产生的问题也越来越大。</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="研发团队的探索与思考"><a href="#研发团队的探索与思考" class="headerlink" title="研发团队的探索与思考"></a>研发团队的探索与思考</h1><h2 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h2><ul>
+<li>敏捷转型，完善各环节规范、流程及培训，达到高效高质</li>
+<li>提供可复用的服务（产品+业务=服务），满足部门战略，新市场项目复制的快速支撑</li>
+</ul>
+<h2 id="以新项目驱动架构变革，百废待兴"><a href="#以新项目驱动架构变革，百废待兴" class="headerlink" title="以新项目驱动架构变革，百废待兴"></a>以新项目驱动架构变革，百废待兴</h2><p>借鉴上个项目开发的总结经验，以新项目驱动模块化开发落地，从核心功能切分成系统可承载的业务边界，使其增强为一个完全适配敏捷开发的企业级互联网IT架构，为后续项目快速实现业务定制化的服务能力。</p>
+<blockquote>
+<p>要做模块化的话，就要先从组件化开始，把系统拆分成多个组件，分离组件边界和责任，便于独立升级和维护。通过组件化的解耦，使其封装成通用能力和业务逻辑的复用，避免重复劳动，缩短业务开发和上线的流程，将这些可以复用的能力和组件固化下来、沉淀于框架产品，并以开放式、标准化的接口供不同的项目组装。</p>
+</blockquote>
+<p><strong>三大难关需要攻克：</strong></p>
+<blockquote>
+<p>业务边界领域模型的界定<br>分布式服务治理等技术经验积累<br>团队整体技术水平、敏捷能力的提升</p>
+</blockquote>
+<h3 id="业务拆分，核心业务先行"><a href="#业务拆分，核心业务先行" class="headerlink" title="业务拆分，核心业务先行"></a>业务拆分，核心业务先行</h3><h4 id="着重在需求评审、系统设计阶段（60-设计，40-开发）"><a href="#着重在需求评审、系统设计阶段（60-设计，40-开发）" class="headerlink" title="着重在需求评审、系统设计阶段（60%设计，40%开发）"></a>着重在需求评审、系统设计阶段（60%设计，40%开发）</h4><p>在设计阶段把系统进行分层，把核心业务进行拆分成模块单元，由每1、2个成员负责，根据版本迭代进行分布式部署，然后通过上层对下层的依赖和调度组成一个完整的系统.</p>
+<blockquote>
+<p>架构：模块化开发 + 分布式计算</p>
+<p>各个模块以插件的形式存在。每个都可独立，相互解耦<br>各个模块具体实现与接口调用分离<br>各个模块由专人或小组进行管理</p>
+<p>核心模块分布式+单体模块化，可减少业务拆分出错带来的影响，因为大的架构转变不可能不出问题，关键在于影响范围可控，并且未来可低成本平移微服务、SOA或其他架构。</p>
+</blockquote>
+<p><strong>事例（简单分析）：</strong></p>
+<h3 id="研发流程，结合架构"><a href="#研发流程，结合架构" class="headerlink" title="研发流程，结合架构"></a>研发流程，结合架构</h3><p><strong>流程简化：</strong></p>
+<blockquote>
+<p>需求评审 -&gt; 设计评审 -&gt; 前|后端开发 -&gt; 联调 -&gt; 提测 </p>
+</blockquote>
+<p><strong>小团队集群</strong></p>
+<blockquote>
+<p>框架组（1-2人），维护基础框架、通用服务<br>业务组（每组1-2人），根据业务拆分的模块单元来分组，并使用框架提供的工程进行开发，每个模块可以独立运行</p>
+</blockquote>
+<p><strong>关键侧重环节：</strong></p>
+<blockquote>
+<p>需求与原型评审<br>UML建模评审、数据库设计评审、API规范设计评审<br>测试用例评审</p>
+</blockquote>
+<h3 id="团队积累，夯实基础"><a href="#团队积累，夯实基础" class="headerlink" title="团队积累，夯实基础"></a>团队积累，夯实基础</h3><h4 id="搭建环境（同步联通体系）："><a href="#搭建环境（同步联通体系）：" class="headerlink" title="搭建环境（同步联通体系）："></a>搭建环境（同步联通体系）：</h4><ul>
+<li>[ ] 搭建gitlab管理代码，并使代码审查可持续可跟踪可在线讨论，形成信息透明</li>
+<li>[ ] 使用maven库，由jenkins驱动，达到项目自动化构建、编译、部署。</li>
+<li>[x] 自动化测试，Sonar扫描技术债务、覆盖率(单元测试覆盖率)、重复代码等实现项目代码质量的可持续监测</li>
+</ul>
+<h4 id="完善基础框架"><a href="#完善基础框架" class="headerlink" title="完善基础框架"></a>完善基础框架</h4><p><img src="media/15016605297261/15022618870753.jpg" alt=""></p>
+<h4 id="加强流程规范贯彻与培训指导："><a href="#加强流程规范贯彻与培训指导：" class="headerlink" title="加强流程规范贯彻与培训指导："></a>加强流程规范贯彻与培训指导：</h4><p><strong>梳理知识库，推动培训：</strong></p>
+<p>项目：</p>
+<blockquote>
+<p>需求评审方法<br>估时方法<br>敏捷方法<br>任务管理</p>
+</blockquote>
+<p>技术：</p>
+<blockquote>
+<p>技术评审规范<br>开发手册与开发规范<br>CodeReview规范<br>技术债务管理</p>
+</blockquote>
+<p>管理：</p>
+<blockquote>
+<p>IDP个人发展规划<br>OKR目标管理<br>KPI绩效管理<br><img src="media/14993963795713/15016601979440.jpg" alt=""></p>
+</blockquote>
+<h4 id="保持团队高度的沟通（每周研发例会）"><a href="#保持团队高度的沟通（每周研发例会）" class="headerlink" title="保持团队高度的沟通（每周研发例会）"></a>保持团队高度的沟通（每周研发例会）</h4><p><strong>开发阶段</strong></p>
+<ul>
+<li>工作任务全部迁移todo，每天更新，达到目标一致、沟通实时、问题透明；</li>
+<li>强制推行编码规范，降低代码随意造成问题的概率；</li>
+<li>规范化技术方案实施与评审机制，降低逻辑层面与架构层面造成问题的概率</li>
+<li>code review，保障质量，解决共性问题</li>
+</ul>
+<p><strong>测试阶段</strong></p>
+<ul>
+<li>定期或不定期开展 Bug 评审会，清理库存 Bug，或者针对难以解决的 Bug 协商处理方案；</li>
+<li>bug优先级安排，上线前遗留 Bug 的处理措施确定</li>
+<li>对 Bug 的成因进行分析和标注，定时汇总并通告，让开发人员集体增长问题解决经验，减少同类问题多次出现的概率</li>
+</ul>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>综合以上，我深深地感受到了团队往敏捷转型发展的阻力，从规划、需求分析、系统设计到项目交付的期限，事实上留给技术的思考和开发成本较少。希望可以借助这段空档期，从架构、基础、人员、体系等方面大胆变革，拥抱不确定性带来的挑战和机遇。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/18/新员工试用期面谈/" rel="next" title="试用期考核及面谈">
+                <i class="fa fa-chevron-left"></i> 试用期考核及面谈
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="xlei" />
+          <p class="site-author-name" itemprop="name">xlei</p>
+           
+              <p class="site-description motion-element" itemprop="description">贪多嚼不烂</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#研发团队管理总结"><span class="nav-number">1.</span> <span class="nav-text">研发团队管理总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#复盘"><span class="nav-number">2.</span> <span class="nav-text">复盘</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#回顾目标"><span class="nav-number">2.1.</span> <span class="nav-text">回顾目标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务目标"><span class="nav-number">2.1.1.</span> <span class="nav-text">业务目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#研发目标"><span class="nav-number">2.1.2.</span> <span class="nav-text">研发目标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#评估结果"><span class="nav-number">2.2.</span> <span class="nav-text">评估结果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#亮点"><span class="nav-number">2.2.1.</span> <span class="nav-text">亮点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不足之处"><span class="nav-number">2.2.2.</span> <span class="nav-text">不足之处</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析原因"><span class="nav-number">2.3.</span> <span class="nav-text">分析原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结经验"><span class="nav-number">2.4.</span> <span class="nav-text">总结经验</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#研发团队的探索与思考"><span class="nav-number">3.</span> <span class="nav-text">研发团队的探索与思考</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目标："><span class="nav-number">3.1.</span> <span class="nav-text">目标：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以新项目驱动架构变革，百废待兴"><span class="nav-number">3.2.</span> <span class="nav-text">以新项目驱动架构变革，百废待兴</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务拆分，核心业务先行"><span class="nav-number">3.2.1.</span> <span class="nav-text">业务拆分，核心业务先行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#着重在需求评审、系统设计阶段（60-设计，40-开发）"><span class="nav-number">3.2.1.1.</span> <span class="nav-text">着重在需求评审、系统设计阶段（60%设计，40%开发）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#研发流程，结合架构"><span class="nav-number">3.2.2.</span> <span class="nav-text">研发流程，结合架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#团队积累，夯实基础"><span class="nav-number">3.2.3.</span> <span class="nav-text">团队积累，夯实基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建环境（同步联通体系）："><span class="nav-number">3.2.3.1.</span> <span class="nav-text">搭建环境（同步联通体系）：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完善基础框架"><span class="nav-number">3.2.3.2.</span> <span class="nav-text">完善基础框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加强流程规范贯彻与培训指导："><span class="nav-number">3.2.3.3.</span> <span class="nav-text">加强流程规范贯彻与培训指导：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#保持团队高度的沟通（每周研发例会）"><span class="nav-number">3.2.3.4.</span> <span class="nav-text">保持团队高度的沟通（每周研发例会）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">3.3.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xlei</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Gemini
+  </a>
+</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://xlei.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/08/08/研发团队管理总结/';
+          this.page.identifier = '2017/08/08/研发团队管理总结/';
+          this.page.title = '研发团队管理总结';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://xlei.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
